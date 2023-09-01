@@ -1,0 +1,11 @@
+C:\Users\CJ3018113\Desktop\Icones\Programa\Projeto\Projeto\obj\Debug\Projeto.csproj.AssemblyReference.cache
+C:\Users\CJ3018113\Desktop\Icones\Programa\Projeto\Projeto\obj\Debug\Projeto.csproj.SuggestedBindingRedirects.cache
+C:\Users\CJ3018113\Desktop\Icones\Programa\Projeto\Projeto\obj\Debug\Projeto.Form1.resources
+C:\Users\CJ3018113\Desktop\Icones\Programa\Projeto\Projeto\obj\Debug\Projeto.Properties.Resources.resources
+C:\Users\CJ3018113\Desktop\Icones\Programa\Projeto\Projeto\obj\Debug\Projeto.csproj.GenerateResource.cache
+C:\Users\CJ3018113\Desktop\Icones\Programa\Projeto\Projeto\obj\Debug\Projeto.csproj.CoreCompileInputs.cache
+C:\Users\CJ3018113\Desktop\Icones\Programa\Projeto\Projeto\bin\Debug\Projeto.exe.config
+C:\Users\CJ3018113\Desktop\Icones\Programa\Projeto\Projeto\bin\Debug\Projeto.exe
+C:\Users\CJ3018113\Desktop\Icones\Programa\Projeto\Projeto\bin\Debug\Projeto.pdb
+C:\Users\CJ3018113\Desktop\Icones\Programa\Projeto\Projeto\obj\Debug\Projeto.exe
+C:\Users\CJ3018113\Desktop\Icones\Programa\Projeto\Projeto\obj\Debug\Projeto.pdb
