@@ -47,7 +47,7 @@
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.Color.White;
-            this.lblName.Location = new System.Drawing.Point(32, 29);
+            this.lblName.Location = new System.Drawing.Point(12, 9);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(125, 21);
             this.lblName.TabIndex = 0;
@@ -56,7 +56,7 @@
             // txbName
             // 
             this.txbName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbName.Location = new System.Drawing.Point(36, 54);
+            this.txbName.Location = new System.Drawing.Point(16, 34);
             this.txbName.Name = "txbName";
             this.txbName.Size = new System.Drawing.Size(216, 25);
             this.txbName.TabIndex = 1;
@@ -64,7 +64,7 @@
             // txbEndereco
             // 
             this.txbEndereco.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbEndereco.Location = new System.Drawing.Point(513, 54);
+            this.txbEndereco.Location = new System.Drawing.Point(16, 96);
             this.txbEndereco.Name = "txbEndereco";
             this.txbEndereco.Size = new System.Drawing.Size(216, 25);
             this.txbEndereco.TabIndex = 3;
@@ -74,7 +74,7 @@
             this.lblEndereco.AutoSize = true;
             this.lblEndereco.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEndereco.ForeColor = System.Drawing.Color.White;
-            this.lblEndereco.Location = new System.Drawing.Point(509, 29);
+            this.lblEndereco.Location = new System.Drawing.Point(12, 71);
             this.lblEndereco.Name = "lblEndereco";
             this.lblEndereco.Size = new System.Drawing.Size(77, 21);
             this.lblEndereco.TabIndex = 2;
@@ -83,7 +83,7 @@
             // txbEmail
             // 
             this.txbEmail.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbEmail.Location = new System.Drawing.Point(36, 208);
+            this.txbEmail.Location = new System.Drawing.Point(16, 168);
             this.txbEmail.Name = "txbEmail";
             this.txbEmail.Size = new System.Drawing.Size(216, 25);
             this.txbEmail.TabIndex = 5;
@@ -93,7 +93,7 @@
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.ForeColor = System.Drawing.Color.White;
-            this.lblEmail.Location = new System.Drawing.Point(32, 183);
+            this.lblEmail.Location = new System.Drawing.Point(12, 143);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(54, 21);
             this.lblEmail.TabIndex = 4;
@@ -102,7 +102,7 @@
             // txbPhone
             // 
             this.txbPhone.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbPhone.Location = new System.Drawing.Point(513, 208);
+            this.txbPhone.Location = new System.Drawing.Point(16, 261);
             this.txbPhone.Name = "txbPhone";
             this.txbPhone.Size = new System.Drawing.Size(216, 25);
             this.txbPhone.TabIndex = 7;
@@ -112,7 +112,7 @@
             this.lblPhone.AutoSize = true;
             this.lblPhone.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPhone.ForeColor = System.Drawing.Color.White;
-            this.lblPhone.Location = new System.Drawing.Point(509, 183);
+            this.lblPhone.Location = new System.Drawing.Point(12, 236);
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.Size = new System.Drawing.Size(67, 21);
             this.lblPhone.TabIndex = 6;
@@ -122,7 +122,7 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.ForeColor = System.Drawing.Color.White;
-            this.checkBox1.Location = new System.Drawing.Point(36, 240);
+            this.checkBox1.Location = new System.Drawing.Point(16, 200);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(211, 17);
             this.checkBox1.TabIndex = 8;
@@ -132,7 +132,7 @@
             // btnInsert
             // 
             this.btnInsert.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInsert.Location = new System.Drawing.Point(153, 372);
+            this.btnInsert.Location = new System.Drawing.Point(16, 352);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(99, 36);
             this.btnInsert.TabIndex = 9;
@@ -143,7 +143,7 @@
             // btnClear
             // 
             this.btnClear.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(513, 372);
+            this.btnClear.Location = new System.Drawing.Point(133, 352);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(99, 36);
             this.btnClear.TabIndex = 10;
@@ -155,7 +155,7 @@
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.ForeColor = System.Drawing.Color.White;
-            this.checkBox2.Location = new System.Drawing.Point(513, 240);
+            this.checkBox2.Location = new System.Drawing.Point(16, 293);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(229, 17);
             this.checkBox2.TabIndex = 11;
@@ -167,7 +167,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(79)))), ((int)(((byte)(79)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(258, 400);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnInsert);

@@ -63,6 +63,16 @@ namespace Projeto.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add_user_32 {
+            get {
+                object obj = ResourceManager.GetObject("add-user-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap home_32px {
             get {
                 object obj = ResourceManager.GetObject("home_32px", resourceCulture);
@@ -96,6 +106,16 @@ namespace Projeto.Properties {
         internal static System.Drawing.Bitmap menu_4_32 {
             get {
                 object obj = ResourceManager.GetObject("menu-4-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_32 {
+            get {
+                object obj = ResourceManager.GetObject("user-32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

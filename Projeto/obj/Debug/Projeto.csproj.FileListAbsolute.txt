@@ -10,3 +10,4 @@ C:\Users\CJ3018113\Desktop\Icones\Programa\Projeto\Projeto\obj\Debug\Projeto.exe
 C:\Users\CJ3018113\Desktop\Icones\Programa\Projeto\Projeto\obj\Debug\Projeto.pdb
 C:\Users\CJ3018113\Desktop\Icones\Programa\Projeto\Projeto\obj\Debug\Projeto.Home.resources
 C:\Users\CJ3018113\Desktop\Icones\Programa\Projeto\Projeto\obj\Debug\Projeto.Cad_User.resources
+C:\Users\CJ3018113\Desktop\Icones\Programa\Projeto\Projeto\obj\Debug\Projeto.Search_User.resources

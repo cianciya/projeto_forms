@@ -32,19 +32,18 @@
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.pMenu = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel_Cadastro = new System.Windows.Forms.Panel();
+            this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
+            this.cadastro_timer = new System.Windows.Forms.Timer(this.components);
             this.menuButon = new System.Windows.Forms.PictureBox();
             this.btnHome = new System.Windows.Forms.Button();
             this.btnCadastro = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
-            this.btnAvulso = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
-            this.cadastro_timer = new System.Windows.Forms.Timer(this.components);
-            this.panel_Cadastro = new System.Windows.Forms.Panel();
             this.sidebar.SuspendLayout();
             this.pMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.menuButon)).BeginInit();
             this.panel_Cadastro.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.menuButon)).BeginInit();
             this.SuspendLayout();
             // 
             // sidebar
@@ -83,6 +82,28 @@
             this.label1.Text = "Menu";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // panel_Cadastro
+            // 
+            this.panel_Cadastro.Controls.Add(this.btnCadastro);
+            this.panel_Cadastro.Controls.Add(this.btnCadastrar);
+            this.panel_Cadastro.Controls.Add(this.button1);
+            this.panel_Cadastro.Location = new System.Drawing.Point(3, 151);
+            this.panel_Cadastro.MaximumSize = new System.Drawing.Size(216, 110);
+            this.panel_Cadastro.MinimumSize = new System.Drawing.Size(216, 36);
+            this.panel_Cadastro.Name = "panel_Cadastro";
+            this.panel_Cadastro.Size = new System.Drawing.Size(216, 110);
+            this.panel_Cadastro.TabIndex = 8;
+            // 
+            // sidebarTimer
+            // 
+            this.sidebarTimer.Interval = 10;
+            this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
+            // 
+            // cadastro_timer
+            // 
+            this.cadastro_timer.Interval = 10;
+            this.cadastro_timer.Tick += new System.EventHandler(this.cadastro_Tick);
+            // 
             // menuButon
             // 
             this.menuButon.Image = global::Projeto.Properties.Resources.menu_4_32;
@@ -116,9 +137,9 @@
             this.btnCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCadastro.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastro.ForeColor = System.Drawing.Color.White;
-            this.btnCadastro.Image = global::Projeto.Properties.Resources.home_5_32;
+            this.btnCadastro.Image = global::Projeto.Properties.Resources.user_32;
             this.btnCadastro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCadastro.Location = new System.Drawing.Point(-3, 45);
+            this.btnCadastro.Location = new System.Drawing.Point(-2, -1);
             this.btnCadastro.Name = "btnCadastro";
             this.btnCadastro.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnCadastro.Size = new System.Drawing.Size(216, 37);
@@ -133,9 +154,9 @@
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCadastrar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrar.ForeColor = System.Drawing.Color.White;
-            this.btnCadastrar.Image = global::Projeto.Properties.Resources.home_5_32;
+            this.btnCadastrar.Image = global::Projeto.Properties.Resources.add_user_32;
             this.btnCadastrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCadastrar.Location = new System.Drawing.Point(0, 3);
+            this.btnCadastrar.Location = new System.Drawing.Point(-1, 36);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnCadastrar.Size = new System.Drawing.Size(216, 36);
@@ -145,22 +166,6 @@
             this.btnCadastrar.UseVisualStyleBackColor = true;
             this.btnCadastrar.Click += new System.EventHandler(this.button2_Click);
             // 
-            // btnAvulso
-            // 
-            this.btnAvulso.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAvulso.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAvulso.ForeColor = System.Drawing.Color.White;
-            this.btnAvulso.Image = global::Projeto.Properties.Resources.home_5_32;
-            this.btnAvulso.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAvulso.Location = new System.Drawing.Point(-3, 126);
-            this.btnAvulso.Name = "btnAvulso";
-            this.btnAvulso.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnAvulso.Size = new System.Drawing.Size(216, 36);
-            this.btnAvulso.TabIndex = 3;
-            this.btnAvulso.Text = "             Teste";
-            this.btnAvulso.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAvulso.UseVisualStyleBackColor = true;
-            // 
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -168,7 +173,7 @@
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Image = global::Projeto.Properties.Resources.home_5_32;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(-3, 88);
+            this.button1.Location = new System.Drawing.Point(-1, 72);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.button1.Size = new System.Drawing.Size(216, 36);
@@ -177,30 +182,6 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // sidebarTimer
-            // 
-            this.sidebarTimer.Interval = 10;
-            this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
-            // 
-            // cadastro_timer
-            // 
-            this.cadastro_timer.Interval = 10;
-            this.cadastro_timer.Tick += new System.EventHandler(this.cadastro_Tick);
-            // 
-            // panel_Cadastro
-            // 
-            this.panel_Cadastro.Controls.Add(this.btnCadastro);
-            this.panel_Cadastro.Controls.Add(this.btnAvulso);
-            this.panel_Cadastro.Controls.Add(this.button1);
-            this.panel_Cadastro.Controls.Add(this.btnCadastrar);
-            this.panel_Cadastro.Location = new System.Drawing.Point(3, 151);
-            this.panel_Cadastro.MaximumSize = new System.Drawing.Size(216, 172);
-            this.panel_Cadastro.MinimumSize = new System.Drawing.Size(216, 45);
-            this.panel_Cadastro.Name = "panel_Cadastro";
-            this.panel_Cadastro.Size = new System.Drawing.Size(216, 45);
-            this.panel_Cadastro.TabIndex = 8;
-            this.panel_Cadastro.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Cadastro_Paint_1);
             // 
             // Home
             // 
@@ -216,8 +197,8 @@
             this.sidebar.ResumeLayout(false);
             this.pMenu.ResumeLayout(false);
             this.pMenu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.menuButon)).EndInit();
             this.panel_Cadastro.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.menuButon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -228,7 +209,6 @@
         private System.Windows.Forms.Panel pMenu;
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.PictureBox menuButon;
-        private System.Windows.Forms.Button btnAvulso;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Label label1;
