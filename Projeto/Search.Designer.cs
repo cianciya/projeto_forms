@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
             ""}, -1, System.Drawing.Color.Empty, System.Drawing.Color.White, null);
             this.ltvList = new System.Windows.Forms.ListView();
             this.ID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -50,7 +50,7 @@
             this.Telefone});
             this.ltvList.HideSelection = false;
             this.ltvList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem2});
+            listViewItem1});
             this.ltvList.Location = new System.Drawing.Point(12, 47);
             this.ltvList.Name = "ltvList";
             this.ltvList.Size = new System.Drawing.Size(666, 391);
@@ -115,6 +115,7 @@
             this.Name = "Search_User";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta";
+            this.Load += new System.EventHandler(this.Search_User_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -18,46 +18,7 @@ namespace Projeto
         {
             InitializeComponent();
         }
-        private void UpdateListView()
-        {
-            ltvList.Items.Clear();
 
-            Connection conn = new Connection();
-            SqlCommand sqlCom = new SqlCommand();
-
-            sqlCom.Connection = conn.ReturnConnection();
-            sqlCom.CommandText = "select * from User_Projeto";
-
-            try
-            {
-                SqlDataReader dr = sqlCom.EndExecuteReader();
-
-                while(dr.Read())
-                {
-                    int id = (int)dr["ID"];
-                    string name = (string)dr["Name"];
-                    string endereco = (string)dr["Endereco"];
-                    string email = (string)dr["Email"];
-                    string telefone = (string)dr["Telefone"];
-
-                    ListViewItem lv = new ListViewItem(id.ToString());
-                    lv.SubItems.Add(name);
-                    lv.SubItems.Add(endereco);
-                    lv.SubItems.Add(email);
-                    lv.SubItems.Add(telefone);
-                    ltvList.Items.Add(lv);
-                }
-                dr.Close();
-            }
-            catch (Exception err)
-            {
-                MessageBox.Show(err.Message);
-            }
-        }
-        private void FormUser_Load(object sender, EventArgs e)
-        {
-            UpdateListView();
-        }
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -135,6 +96,11 @@ namespace Projeto
         {
             Search_User search_user = new Search_User();
             search_user.ShowDialog();  
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

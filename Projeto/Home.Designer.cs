@@ -131,6 +131,7 @@
             this.btnHome.Text = "             Home";
             this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // btnCadastro
             // 
@@ -159,7 +160,7 @@
             this.btnCadastrar.Location = new System.Drawing.Point(-1, 36);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnCadastrar.Size = new System.Drawing.Size(216, 36);
+            this.btnCadastrar.Size = new System.Drawing.Size(216, 40);
             this.btnCadastrar.TabIndex = 5;
             this.btnCadastrar.Text = "             Cadastrar";
             this.btnCadastrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -191,7 +192,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.sidebar);
             this.Name = "Home";
-            this.Text = "Form1";
+            this.Text = "Home";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Home_Load);
             this.sidebar.ResumeLayout(false);
