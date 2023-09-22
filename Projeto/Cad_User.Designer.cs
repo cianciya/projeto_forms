@@ -60,6 +60,7 @@
             this.txbName.Name = "txbName";
             this.txbName.Size = new System.Drawing.Size(216, 25);
             this.txbName.TabIndex = 1;
+            this.txbName.TextChanged += new System.EventHandler(this.txbName_TextChanged);
             // 
             // txbEndereco
             // 

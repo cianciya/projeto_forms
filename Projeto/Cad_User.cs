@@ -63,5 +63,10 @@ namespace Projeto
             txbEmail.Clear();
             txbPhone.Clear();
         }
+
+        private void txbName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
