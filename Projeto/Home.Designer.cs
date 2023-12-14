@@ -42,12 +42,12 @@
             this.cadastro_timer = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pnlNotification = new System.Windows.Forms.Panel();
-            this.btnSend = new System.Windows.Forms.Button();
-            this.ckbTatuador4 = new System.Windows.Forms.CheckBox();
-            this.ckbTatuador3 = new System.Windows.Forms.CheckBox();
-            this.ckbTatuador2 = new System.Windows.Forms.CheckBox();
             this.ckbTatuador1 = new System.Windows.Forms.CheckBox();
             this.lblNotification = new System.Windows.Forms.Label();
+            this.ckbTatuador2 = new System.Windows.Forms.CheckBox();
+            this.ckbTatuador4 = new System.Windows.Forms.CheckBox();
+            this.ckbTatuador3 = new System.Windows.Forms.CheckBox();
+            this.btnSend = new System.Windows.Forms.Button();
             this.txbNotification = new System.Windows.Forms.TextBox();
             this.ltwNotification = new System.Windows.Forms.ListView();
             this.sidebar.SuspendLayout();
@@ -230,16 +230,46 @@
             this.pnlNotification.Size = new System.Drawing.Size(683, 242);
             this.pnlNotification.TabIndex = 4;
             // 
-            // btnSend
+            // ckbTatuador1
             // 
-            this.btnSend.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSend.Location = new System.Drawing.Point(294, 185);
-            this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(75, 44);
-            this.btnSend.TabIndex = 6;
-            this.btnSend.Text = "Enviar";
-            this.btnSend.UseVisualStyleBackColor = true;
-            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
+            this.ckbTatuador1.AutoSize = true;
+            this.ckbTatuador1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(79)))), ((int)(((byte)(79)))));
+            this.ckbTatuador1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckbTatuador1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ckbTatuador1.Location = new System.Drawing.Point(134, 152);
+            this.ckbTatuador1.Name = "ckbTatuador1";
+            this.ckbTatuador1.Size = new System.Drawing.Size(63, 25);
+            this.ckbTatuador1.TabIndex = 2;
+            this.ckbTatuador1.Text = "Yago";
+            this.ckbTatuador1.UseVisualStyleBackColor = false;
+            this.ckbTatuador1.CheckedChanged += new System.EventHandler(this.ckbTatuador1_CheckedChanged);
+            // 
+            // lblNotification
+            // 
+            this.lblNotification.AutoSize = true;
+            this.lblNotification.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(79)))), ((int)(((byte)(79)))));
+            this.lblNotification.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNotification.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblNotification.Location = new System.Drawing.Point(297, 0);
+            this.lblNotification.Name = "lblNotification";
+            this.lblNotification.Size = new System.Drawing.Size(72, 30);
+            this.lblNotification.TabIndex = 1;
+            this.lblNotification.Text = "Avisos";
+            this.lblNotification.Click += new System.EventHandler(this.lblNotification_Click);
+            // 
+            // ckbTatuador2
+            // 
+            this.ckbTatuador2.AutoSize = true;
+            this.ckbTatuador2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(79)))), ((int)(((byte)(79)))));
+            this.ckbTatuador2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckbTatuador2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ckbTatuador2.Location = new System.Drawing.Point(242, 154);
+            this.ckbTatuador2.Name = "ckbTatuador2";
+            this.ckbTatuador2.Size = new System.Drawing.Size(71, 25);
+            this.ckbTatuador2.TabIndex = 3;
+            this.ckbTatuador2.Text = "Andre";
+            this.ckbTatuador2.UseVisualStyleBackColor = false;
+            this.ckbTatuador2.CheckedChanged += new System.EventHandler(this.ckbTatuador2_CheckedChanged);
             // 
             // ckbTatuador4
             // 
@@ -269,46 +299,16 @@
             this.ckbTatuador3.UseVisualStyleBackColor = false;
             this.ckbTatuador3.CheckedChanged += new System.EventHandler(this.ckbTatuador3_CheckedChanged);
             // 
-            // ckbTatuador2
+            // btnSend
             // 
-            this.ckbTatuador2.AutoSize = true;
-            this.ckbTatuador2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(79)))), ((int)(((byte)(79)))));
-            this.ckbTatuador2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckbTatuador2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ckbTatuador2.Location = new System.Drawing.Point(242, 154);
-            this.ckbTatuador2.Name = "ckbTatuador2";
-            this.ckbTatuador2.Size = new System.Drawing.Size(71, 25);
-            this.ckbTatuador2.TabIndex = 3;
-            this.ckbTatuador2.Text = "Andre";
-            this.ckbTatuador2.UseVisualStyleBackColor = false;
-            this.ckbTatuador2.CheckedChanged += new System.EventHandler(this.ckbTatuador2_CheckedChanged);
-            // 
-            // ckbTatuador1
-            // 
-            this.ckbTatuador1.AutoSize = true;
-            this.ckbTatuador1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(79)))), ((int)(((byte)(79)))));
-            this.ckbTatuador1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckbTatuador1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ckbTatuador1.Location = new System.Drawing.Point(134, 152);
-            this.ckbTatuador1.Name = "ckbTatuador1";
-            this.ckbTatuador1.Size = new System.Drawing.Size(63, 25);
-            this.ckbTatuador1.TabIndex = 2;
-            this.ckbTatuador1.Text = "Yago";
-            this.ckbTatuador1.UseVisualStyleBackColor = false;
-            this.ckbTatuador1.CheckedChanged += new System.EventHandler(this.ckbTatuador1_CheckedChanged);
-            // 
-            // lblNotification
-            // 
-            this.lblNotification.AutoSize = true;
-            this.lblNotification.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(79)))), ((int)(((byte)(79)))));
-            this.lblNotification.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNotification.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblNotification.Location = new System.Drawing.Point(297, 0);
-            this.lblNotification.Name = "lblNotification";
-            this.lblNotification.Size = new System.Drawing.Size(72, 30);
-            this.lblNotification.TabIndex = 1;
-            this.lblNotification.Text = "Avisos";
-            this.lblNotification.Click += new System.EventHandler(this.lblNotification_Click);
+            this.btnSend.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSend.Location = new System.Drawing.Point(294, 185);
+            this.btnSend.Name = "btnSend";
+            this.btnSend.Size = new System.Drawing.Size(75, 44);
+            this.btnSend.TabIndex = 6;
+            this.btnSend.Text = "Enviar";
+            this.btnSend.UseVisualStyleBackColor = true;
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
             // txbNotification
             // 
@@ -369,13 +369,13 @@
         private System.Windows.Forms.Panel panel_Cadastro;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel pnlNotification;
-        private System.Windows.Forms.Label lblNotification;
-        private System.Windows.Forms.TextBox txbNotification;
         private System.Windows.Forms.Button btnSend;
         private System.Windows.Forms.CheckBox ckbTatuador4;
         private System.Windows.Forms.CheckBox ckbTatuador3;
         private System.Windows.Forms.CheckBox ckbTatuador2;
         private System.Windows.Forms.CheckBox ckbTatuador1;
+        private System.Windows.Forms.Label lblNotification;
+        private System.Windows.Forms.TextBox txbNotification;
         private System.Windows.Forms.ListView ltwNotification;
     }
 }

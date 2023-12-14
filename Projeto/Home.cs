@@ -42,7 +42,7 @@ namespace Projeto
 
                     ListViewItem lv = new ListViewItem(id.ToString());
                     lv.SubItems.Add(aviso);
-                    
+
                     ltwNotification.Items.Add(lv);
                 }
                 dr.Close();
@@ -165,7 +165,7 @@ namespace Projeto
         {
             Connection connection = new Connection();
             SqlCommand sqlCommand = new SqlCommand();
-            sqlCommand.Connection = connection.ReturnConnection();            
+            sqlCommand.Connection = connection.ReturnConnection();
 
             int tatuador1ID = GetTatuadorID("Yago");
             int tatuador2ID = GetTatuadorID("Andre");
@@ -201,88 +201,71 @@ namespace Projeto
                 MessageBoxIcon.Information
                 );
 
-            private void InsertAviso(SqlCommand sqlCommand, string aviso, string tatuador)
+        }
+        private void InsertAviso(SqlCommand sqlCommand, string aviso, int tatuador)
+        {
+            sqlCommand.CommandText = @"INSERT INTO Aviso (Aviso, Tatuador) VALUES (@Aviso, @Tatuador)";
+            sqlCommand.Parameters.Clear();
+            sqlCommand.Parameters.AddWithValue("@Aviso", aviso);
+            sqlCommand.Parameters.AddWithValue("@Tatuador", tatuador);
+
+            try
             {
-                sqlCommand.CommandText = @"INSERT INTO Aviso (Aviso, Tatuador) VALUES (@Aviso, @Tatuador)";
-                sqlCommand.Parameters.Clear();
-                sqlCommand.Parameters.AddWithValue("@Aviso", aviso);
-                sqlCommand.Parameters.AddWithValue("@Tatuador", tatuador);
-
-                try
-                {
-                    sqlCommand.ExecuteNonQuery();
-                }
-                catch (Exception err)
-                {
-                    throw new Exception("Erro: Problemas ao inserir o Aviso.\n" + err.Message);
-                }
+                sqlCommand.ExecuteNonQuery();
             }
-
-            private int GetTatuadorID(string nomeTatuador)
+            catch (Exception err)
             {
-                // Lógica para obter o ID do tatuador com base no nome
-                // Aqui você pode fazer uma consulta ao banco de dados para obter o ID correspondente ao nome do tatuador.
-                // Vamos supor que você tenha uma função que consulta o banco de dados e retorna o ID correspondente.
-                // Neste exemplo, vou retornar IDs fictícios baseados no nome do tatuador.
-                if (nomeTatuador == "Yago")
-                    return 1;
-                else if (nomeTatuador == "Andre")
-                    return 2;
-                else if (nomeTatuador == "Aline")
-                    return 3;
-                else if (nomeTatuador == "Joao")
-                    return 4;
-
-                return -1; // Retorno de valor inválido se não encontrar o tatuador
+                throw new Exception("Erro: Problemas ao inserir o Aviso.\n" + err.Message);
             }
-
-
         }
 
-        private void InsertAviso(SqlCommand sqlCommand, string text, int tatuador1ID)
+        private int GetTatuadorID(string nomeTatuador)
         {
-            throw new NotImplementedException();
+            // Lógica para obter o ID do tatuador com base no nome
+            // Aqui você pode fazer uma consulta ao banco de dados para obter o ID correspondente ao nome do tatuador.
+            // Vamos supor que você tenha uma função que consulta o banco de dados e retorna o ID correspondente.
+            // Neste exemplo, vou retornar IDs fictícios baseados no nome do tatuador.
+            if (nomeTatuador == "Yago")
+                return 1;
+            else if (nomeTatuador == "Andre")
+                return 2;
+            else if (nomeTatuador == "Aline")
+                return 3;
+            else if (nomeTatuador == "Joao")
+                return 4;
+
+            return -1; // Retorno de valor inválido se não encontrar o tatuador
         }
 
-        private void InsertAviso(SqlCommand sqlCommand, string text, int tatuador2ID)
-        {
-            throw new NotImplementedException();
-        }
 
-        private void InsertAviso(SqlCommand sqlCommand, string text, int tatuador3ID)
-        {
-            throw new NotImplementedException();
-        }
 
-        private void InsertAviso(SqlCommand sqlCommand, string text, int tatuador4ID)
-        {
-            throw new NotImplementedException();
-        }
+
 
         private void ckbTatuador4_CheckedChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void ckbTatuador2_CheckedChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void ckbTatuador1_CheckedChanged(object sender, EventArgs e)
         {
-            
-        }
-
-        private void lblNotification_Click(object sender, EventArgs e)
-        {
 
         }
 
-        private void txbNotification_TextChanged(object sender, EventArgs e)
-        {
+         private void lblNotification_Click(object sender, EventArgs e)
+         {
 
-        }
+         }
 
-    }    
+         private void txbNotification_TextChanged(object sender, EventArgs e)
+         {
+
+         }
+
+
+    }
 }

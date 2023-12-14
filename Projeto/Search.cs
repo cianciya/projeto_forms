@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace Projeto
 {
@@ -69,6 +71,45 @@ namespace Projeto
         private void Search_User_Load(object sender, EventArgs e)
         {
             UpdateListView();
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            if (ltvList.SelectedItems.Count > 0)
+            {
+                ListViewItem lvid = ltvList.SelectedItems[0];
+                string sid = lvid.SubItems[0].Text;
+                int editarid = Convert.ToInt32(sid);
+
+
+                Edit_User editar = new Edit_User(editarid);
+                editar.ShowDialog();
+            }
+
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            if (ltvList.SelectedItems.Count > 0)
+            {
+                ListViewItem lvid = ltvList.SelectedItems[0];
+                string sid = lvid.SubItems[0].Text;
+                int editarid = Convert.ToInt32(sid);
+
+
+                Connection conn = new Connection();
+                SqlCommand sqlCom = new SqlCommand();
+
+                sqlCom.Connection = conn.ReturnConnection();
+                sqlCom.CommandText = "DELETE from User_Projeto WHERE id = @id";
+                sqlCom.Parameters.AddWithValue("@id", editarid);
+
+                SqlDataReader dr = sqlCom.ExecuteReader();
+            }
+
+
+
+
         }
     }
 }

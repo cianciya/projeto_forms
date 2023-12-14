@@ -17,6 +17,7 @@ namespace Projeto
         public Cad_User()
         {
             InitializeComponent();
+
         }
 
         private void btnInsert_Click(object sender, EventArgs e)
@@ -64,7 +65,7 @@ namespace Projeto
             txbPhone.Clear();
         }
 
-        private void txbName_TextChanged(object sender, EventArgs e)
+        public void txbName_TextChanged(object sender, EventArgs e)
         {
 
         }
